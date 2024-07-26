@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 9 Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <div id="sign-up-box">
+            <h1>Sign Up</h1>
+            <div id="role-selection">
+                <h2>Select Role</h2>
+                <div class="role-options">
+                    <div id="startup-option" class="role-option">Startup</div>
+                    <div id="investor-option" class="role-option">Investor</div>
+                </div>
+            </div>
+        </div>
+
+        <form id="startup-form" class="hidden" action="/submit-startup" method="POST">
+            <h2>Startup Information</h2>
+            <label for="founder-name">Founder/Team Name:</label>
+            <input type="text" id="founder-name" name="founder-name" required>
+
+            <label for="startup-name">Startup Name:</label>
+            <input type="text" id="startup-name" name="startup-name" required>
+
+            <label for="tagline">Tagline/Motto:</label>
+            <input type="text" id="tagline" name="tagline" required>
+
+            <label for="industry">Industry Focus:</label>
+            <input type="text" id="industry" name="industry" required>
+
+            <label for="problem-statement">Problem Statement:</label>
+            <textarea id="problem-statement" name="problem-statement" required></textarea>
+
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website">
+
+            <label for="social-media">Social Media Links:</label>
+            <input type="text" id="social-media" name="social-media">
+
+            <button type="submit">Register as Startup</button>
+        </form>
+
+        <form id="investor-form" class="hidden" action="/submit-investor" method="POST">
+            <h2>Investor Information</h2>
+            <label for="investor-name">Investor Name:</label>
+            <input type="text" id="investor-name" name="investor-name" required>
+
+            <label for="firm-name">Investment Firm:</label>
+            <input type="text" id="firm-name" name="firm-name">
+
+            <label for="position">Position/Title:</label>
+            <input type="text" id="position" name="position" required>
+
+            <label for="preferred-industries">Preferred Industries:</label>
+            <textarea id="preferred-industries" name="preferred-industries" required></textarea>
+
+            <label for="investment-focus">Investment Focus:</label>
+            <input type="text" id="investment-focus" name="investment-focus">
+
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website">
+
+            <button type="submit">Register as Investor</button>
+        </form>
+    </div>
+</body>
+</html>
