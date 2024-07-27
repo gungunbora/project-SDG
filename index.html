@@ -22,26 +22,38 @@
 
         <form id="startup-form" class="hidden" action="/submit-startup" method="POST">
             <h2>Startup Information</h2>
-            <label for="founder-name">Founder/Team Name:</label>
-            <input type="text" id="founder-name" name="founder-name" required>
-
             <label for="startup-name">Startup Name:</label>
             <input type="text" id="startup-name" name="startup-name" required>
 
-            <label for="tagline">Tagline/Motto:</label>
-            <input type="text" id="tagline" name="tagline" required>
+            <label for="startup-email">Email:</label>
+            <input type="email" id="startup-email" name="startup-email" required>
+            <div class="verification">
+                <input type="text" id="startup-email-code" name="startup-email-code" placeholder="Enter verification code">
+                <button type="button" id="verify-email-startup">Verify Email</button>
+            </div>
 
-            <label for="industry">Industry Focus:</label>
-            <input type="text" id="industry" name="industry" required>
+            <label for="startup-phone">Contact No:</label>
+            <input type="tel" id="startup-phone" name="startup-phone" required>
+            <div class="verification">
+                <input type="text" id="startup-phone-code" name="startup-phone-code" placeholder="Enter verification code">
+                <button type="button" id="verify-phone-startup">Verify Phone</button>
+            </div>
 
-            <label for="problem-statement">Problem Statement:</label>
-            <textarea id="problem-statement" name="problem-statement" required></textarea>
+            <label for="sector">Sector:</label>
+            <select id="sector" name="sector" required>
+                <option value="" disabled selected>Select your sector</option>
+                <option value="tech">Technology</option>
+                <option value="finance">Finance</option>
+                <option value="health">Healthcare</option>
+                <option value="education">Education</option>
+                <option value="agriculture">Agriculture</option>
+                <option value="energy">Energy</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="text" id="other-sector" name="other-sector" placeholder="Please specify your sector" class="hidden">
 
-            <label for="website">Website:</label>
+            <label for="website">Website Link:</label>
             <input type="url" id="website" name="website">
-
-            <label for="social-media">Social Media Links:</label>
-            <input type="text" id="social-media" name="social-media">
 
             <button type="submit">Register as Startup</button>
         </form>
@@ -51,23 +63,23 @@
             <label for="investor-name">Investor Name:</label>
             <input type="text" id="investor-name" name="investor-name" required>
 
-            <label for="firm-name">Investment Firm:</label>
-            <input type="text" id="firm-name" name="firm-name">
+            <label for="investor-email">Email:</label>
+            <input type="email" id="investor-email" name="investor-email" required>
+            <div class="verification">
+                <input type="text" id="investor-email-code" name="investor-email-code" placeholder="Enter verification code">
+                <button type="button" id="verify-email-investor">Verify Email</button>
+            </div>
 
-            <label for="position">Position/Title:</label>
-            <input type="text" id="position" name="position" required>
-
-            <label for="preferred-industries">Preferred Industries:</label>
-            <textarea id="preferred-industries" name="preferred-industries" required></textarea>
-
-            <label for="investment-focus">Investment Focus:</label>
-            <input type="text" id="investment-focus" name="investment-focus">
-
-            <label for="website">Website:</label>
-            <input type="url" id="website" name="website">
+            <label for="investor-phone">Contact No:</label>
+            <input type="tel" id="investor-phone" name="investor-phone" required>
+            <div class="verification">
+                <input type="text" id="investor-phone-code" name="investor-phone-code" placeholder="Enter verification code">
+                <button type="button" id="verify-phone-investor">Verify Phone</button>
+            </div>
 
             <button type="submit">Register as Investor</button>
         </form>
     </div>
 </body>
 </html>
+
