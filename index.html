@@ -39,18 +39,20 @@
                 <button type="button" id="verify-phone-startup">Verify Phone</button>
             </div>
 
-            <label for="sector">Sector:</label>
-            <select id="sector" name="sector" required>
-                <option value="" disabled selected>Select your sector</option>
-                <option value="tech">Technology</option>
-                <option value="finance">Finance</option>
-                <option value="health">Healthcare</option>
-                <option value="education">Education</option>
-                <option value="agriculture">Agriculture</option>
-                <option value="energy">Energy</option>
-                <option value="other">Other</option>
-            </select>
-            <input type="text" id="other-sector" name="other-sector" placeholder="Please specify your sector" class="hidden">
+            <div class="sector-container">
+                <label for="sector">Sector:</label>
+                <select id="sector" name="sector" required>
+                    <option value="" disabled selected>Select your sector</option>
+                    <option value="tech">Technology</option>
+                    <option value="finance">Finance</option>
+                    <option value="health">Healthcare</option>
+                    <option value="education">Education</option>
+                    <option value="agriculture">Agriculture</option>
+                    <option value="energy">Energy</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="text" id="other-sector" name="other-sector" placeholder="Please specify your sector" class="hidden">
+            </div>
 
             <label for="website">Website Link:</label>
             <input type="url" id="website" name="website">

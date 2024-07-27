@@ -44,3 +44,5 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Verification code sent to the investor's phone.");
     });
 });
+
+   
